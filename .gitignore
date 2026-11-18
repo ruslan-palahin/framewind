@@ -1,0 +1,8 @@
+/.build/
+/build/
+/.swiftpm/
+/.claude/*
+!/.claude/rules/
+.DS_Store
+xcuserdata/
+*.xcuserstate
