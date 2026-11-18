@@ -3,6 +3,8 @@
 "menu.file" = "Datoteka";
 "menu.open" = "Otvori…";
 "menu.close" = "Zatvori";
+"menu.view" = "Prikaz";
+"menu.enterFullScreen" = "Uđi u prikaz preko cijelog zaslona";
 "control.play" = "Reproduciraj";
 "control.pause" = "Pauza";
 "control.play.toolTip" = "Reproduciraj video. Ako je video već završio, počet će ispočetka";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Trajanje videa";
 "control.endBehavior.label" = "Na kraju videa:";
 "control.endBehavior.toolTip" = "Što učiniti kada video završi";
+"control.enterFullScreen.toolTip" = "Prikaži videozapis preko cijelog zaslona (F)";
+"control.exitFullScreen.toolTip" = "Izađi iz prikaza preko cijelog zaslona (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Ponovi";
 "endBehavior.returnToStart.label" = "Na početak";

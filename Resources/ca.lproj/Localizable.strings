@@ -3,6 +3,8 @@
 "menu.file" = "Arxiu";
 "menu.open" = "Obre…";
 "menu.close" = "Tanca";
+"menu.view" = "Visualització";
+"menu.enterFullScreen" = "Entra a pantalla completa";
 "control.play" = "Reprodueix";
 "control.pause" = "Pausa";
 "control.play.toolTip" = "Reprodueix el vídeo. Si el vídeo ja ha acabat, començarà des del principi";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Durada del vídeo";
 "control.endBehavior.label" = "En acabar:";
 "control.endBehavior.toolTip" = "Què fer quan s’acabi el vídeo";
+"control.enterFullScreen.toolTip" = "Mostra el vídeo a pantalla completa (F)";
+"control.exitFullScreen.toolTip" = "Surt de la pantalla completa (F)";
 "endBehavior.stop.label" = "Atura";
 "endBehavior.loop.label" = "Repeteix";
 "endBehavior.returnToStart.label" = "A l’inici";

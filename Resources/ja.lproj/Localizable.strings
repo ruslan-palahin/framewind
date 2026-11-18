@@ -3,6 +3,8 @@
 "menu.file" = "ファイル";
 "menu.open" = "開く…";
 "menu.close" = "閉じる";
+"menu.view" = "表示";
+"menu.enterFullScreen" = "フルスクリーンにする";
 "control.play" = "再生";
 "control.pause" = "一時停止";
 "control.play.toolTip" = "ビデオを再生します。ビデオがすでに終了している場合は最初から再生します";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "ビデオの長さ";
 "control.endBehavior.label" = "終了時：";
 "control.endBehavior.toolTip" = "ビデオが終了したときの動作";
+"control.enterFullScreen.toolTip" = "ビデオをフルスクリーンで表示します (F)";
+"control.exitFullScreen.toolTip" = "フルスクリーンを終了します (F)";
 "endBehavior.stop.label" = "停止";
 "endBehavior.loop.label" = "リピート";
 "endBehavior.returnToStart.label" = "先頭へ";

@@ -3,6 +3,8 @@
 "menu.file" = "Ablage";
 "menu.open" = "Öffnen …";
 "menu.close" = "Schließen";
+"menu.view" = "Darstellung";
+"menu.enterFullScreen" = "Vollbildmodus aktivieren";
 "control.play" = "Abspielen";
 "control.pause" = "Pause";
 "control.play.toolTip" = "Video abspielen. Wenn das Video bereits zu Ende ist, beginnt es von vorn";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Videolänge";
 "control.endBehavior.label" = "Am Videoende:";
 "control.endBehavior.toolTip" = "Was passieren soll, wenn das Video endet";
+"control.enterFullScreen.toolTip" = "Video im Vollbildmodus zeigen (F)";
+"control.exitFullScreen.toolTip" = "Vollbildmodus beenden (F)";
 "endBehavior.stop.label" = "Stopp";
 "endBehavior.loop.label" = "Wiederholen";
 "endBehavior.returnToStart.label" = "Zum Anfang";

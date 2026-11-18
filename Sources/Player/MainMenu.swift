@@ -19,5 +19,12 @@ func makeMainMenu() -> NSMenu {
     fileItem.submenu = fileMenu
     mainMenu.addItem(fileItem)
 
+    let viewMenu = NSMenu(title: String(localized: "menu.view"))
+    let fullScreenItem = viewMenu.addItem(withTitle: String(localized: "menu.enterFullScreen"), action: #selector(NSWindow.toggleFullScreen(_:)), keyEquivalent: "f")
+    fullScreenItem.keyEquivalentModifierMask = [.control, .command]
+    let viewItem = NSMenuItem()
+    viewItem.submenu = viewMenu
+    mainMenu.addItem(viewItem)
+
     return mainMenu
 }

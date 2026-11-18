@@ -13,6 +13,7 @@ final class ControlBar: NSView {
         target: nil,
         action: nil
     )
+    let fullScreenButton = NSButton()
     private let currentTimeLabel = NSTextField(labelWithString: "0:00")
     private let durationLabel = NSTextField(labelWithString: "0:00")
     private let endBehaviorLabel = NSTextField(labelWithString: String(localized: "control.endBehavior.label"))
@@ -22,6 +23,9 @@ final class ControlBar: NSView {
 
         playButton.bezelStyle = .push
         playButton.imagePosition = .imageLeading
+
+        fullScreenButton.bezelStyle = .push
+        fullScreenButton.imagePosition = .imageOnly
 
         slider.isContinuous = true
         slider.toolTip = String(localized: "control.slider.toolTip")
@@ -40,16 +44,17 @@ final class ControlBar: NSView {
         }
 
         let stack = NSStackView(views: [
-            playButton, currentTimeLabel, slider, durationLabel, endBehaviorLabel, endBehaviorControl,
+            playButton, currentTimeLabel, slider, durationLabel, endBehaviorLabel, endBehaviorControl, fullScreenButton,
         ])
         stack.orientation = .horizontal
         stack.spacing = 8
         stack.setCustomSpacing(20, after: durationLabel)
+        stack.setCustomSpacing(12, after: endBehaviorControl)
         stack.translatesAutoresizingMaskIntoConstraints = false
         addSubview(stack)
 
         slider.setContentHuggingPriority(.defaultLow, for: .horizontal)
-        for view in [playButton, currentTimeLabel, durationLabel, endBehaviorLabel, endBehaviorControl] {
+        for view in [playButton, currentTimeLabel, durationLabel, endBehaviorLabel, endBehaviorControl, fullScreenButton] {
             view.setContentHuggingPriority(.required, for: .horizontal)
             view.setContentCompressionResistancePriority(.required, for: .horizontal)
         }
@@ -64,6 +69,7 @@ final class ControlBar: NSView {
         ])
 
         showPlaying(false)
+        showFullScreen(false)
         setVideoLoaded(false)
     }
 
@@ -81,6 +87,22 @@ final class ControlBar: NSView {
         playButton.toolTip = isPlaying
             ? String(localized: "control.pause.toolTip")
             : String(localized: "control.play.toolTip")
+    }
+
+    override func draw(_ dirtyRect: NSRect) {
+        NSColor.windowBackgroundColor.setFill()
+        bounds.fill()
+    }
+
+    func showFullScreen(_ isFullScreen: Bool) {
+        let hint = isFullScreen
+            ? String(localized: "control.exitFullScreen.toolTip")
+            : String(localized: "control.enterFullScreen.toolTip")
+        fullScreenButton.image = NSImage(
+            systemSymbolName: isFullScreen ? "arrow.down.right.and.arrow.up.left" : "arrow.up.left.and.arrow.down.right",
+            accessibilityDescription: hint
+        )
+        fullScreenButton.toolTip = hint
     }
 
     func showTime(current: Double, duration: Double) {

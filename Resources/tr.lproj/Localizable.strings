@@ -3,6 +3,8 @@
 "menu.file" = "Dosya";
 "menu.open" = "Aç…";
 "menu.close" = "Kapat";
+"menu.view" = "Görüntü";
+"menu.enterFullScreen" = "Tam Ekrana Geç";
 "control.play" = "Oynat";
 "control.pause" = "Duraklat";
 "control.play.toolTip" = "Videoyu oynat. Video zaten bittiyse baştan başlar";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Video süresi";
 "control.endBehavior.label" = "Video bitince:";
 "control.endBehavior.toolTip" = "Video bittiğinde ne yapılacağı";
+"control.enterFullScreen.toolTip" = "Videoyu tam ekranda göster (F)";
+"control.exitFullScreen.toolTip" = "Tam ekrandan çık (F)";
 "endBehavior.stop.label" = "Durdur";
 "endBehavior.loop.label" = "Tekrarla";
 "endBehavior.returnToStart.label" = "Başa dön";

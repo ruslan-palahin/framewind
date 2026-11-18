@@ -3,6 +3,8 @@
 "menu.file" = "File";
 "menu.open" = "Apri…";
 "menu.close" = "Chiudi";
+"menu.view" = "Vista";
+"menu.enterFullScreen" = "Entra in modalità a tutto schermo";
 "control.play" = "Riproduci";
 "control.pause" = "Pausa";
 "control.play.toolTip" = "Riproduci il video. Se il video è già finito, ripartirà dall’inizio";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Durata del video";
 "control.endBehavior.label" = "A fine video:";
 "control.endBehavior.toolTip" = "Cosa fare quando il video finisce";
+"control.enterFullScreen.toolTip" = "Mostra il video a tutto schermo (F)";
+"control.exitFullScreen.toolTip" = "Esci dalla modalità a tutto schermo (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Ripeti";
 "endBehavior.returnToStart.label" = "All’inizio";

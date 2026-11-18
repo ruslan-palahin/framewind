@@ -3,6 +3,8 @@
 "menu.file" = "Fail";
 "menu.open" = "Buka…";
 "menu.close" = "Tutup";
+"menu.view" = "Paparan";
+"menu.enterFullScreen" = "Masuk Skrin Penuh";
 "control.play" = "Main";
 "control.pause" = "Jeda";
 "control.play.toolTip" = "Mainkan video. Jika video sudah tamat, ia akan bermula dari awal";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Tempoh video";
 "control.endBehavior.label" = "Di akhir video:";
 "control.endBehavior.toolTip" = "Apa yang dilakukan apabila video tamat";
+"control.enterFullScreen.toolTip" = "Tunjukkan video dalam skrin penuh (F)";
+"control.exitFullScreen.toolTip" = "Keluar dari skrin penuh (F)";
 "endBehavior.stop.label" = "Henti";
 "endBehavior.loop.label" = "Ulang";
 "endBehavior.returnToStart.label" = "Ke awal";

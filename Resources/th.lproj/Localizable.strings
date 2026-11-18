@@ -3,6 +3,8 @@
 "menu.file" = "ไฟล์";
 "menu.open" = "เปิด…";
 "menu.close" = "ปิด";
+"menu.view" = "มุมมอง";
+"menu.enterFullScreen" = "เข้าสู่โหมดเต็มหน้าจอ";
 "control.play" = "เล่น";
 "control.pause" = "หยุดชั่วคราว";
 "control.play.toolTip" = "เล่นวิดีโอ หากวิดีโอจบไปแล้ว จะเริ่มเล่นใหม่ตั้งแต่ต้น";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "ความยาววิดีโอ";
 "control.endBehavior.label" = "เมื่อวิดีโอจบ:";
 "control.endBehavior.toolTip" = "สิ่งที่จะทำเมื่อวิดีโอจบ";
+"control.enterFullScreen.toolTip" = "แสดงวิดีโอแบบเต็มหน้าจอ (F)";
+"control.exitFullScreen.toolTip" = "ออกจากโหมดเต็มหน้าจอ (F)";
 "endBehavior.stop.label" = "หยุด";
 "endBehavior.loop.label" = "เล่นซ้ำ";
 "endBehavior.returnToStart.label" = "กลับไปต้น";

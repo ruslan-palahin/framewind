@@ -3,6 +3,8 @@
 "menu.file" = "File";
 "menu.open" = "Open…";
 "menu.close" = "Close";
+"menu.view" = "View";
+"menu.enterFullScreen" = "Enter Full Screen";
 "control.play" = "Play";
 "control.pause" = "Pause";
 "control.play.toolTip" = "Play the video. If the video has already ended, it starts from the beginning";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Video length";
 "control.endBehavior.label" = "When video ends:";
 "control.endBehavior.toolTip" = "What to do when the video ends";
+"control.enterFullScreen.toolTip" = "Show the video in full screen (F)";
+"control.exitFullScreen.toolTip" = "Exit full screen (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Loop";
 "endBehavior.returnToStart.label" = "To start";

@@ -3,6 +3,8 @@
 "menu.file" = "파일";
 "menu.open" = "열기…";
 "menu.close" = "닫기";
+"menu.view" = "보기";
+"menu.enterFullScreen" = "전체 화면 시작";
 "control.play" = "재생";
 "control.pause" = "일시 정지";
 "control.play.toolTip" = "비디오를 재생합니다. 비디오가 이미 끝났으면 처음부터 재생합니다";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "비디오 길이";
 "control.endBehavior.label" = "비디오가 끝나면:";
 "control.endBehavior.toolTip" = "비디오가 끝났을 때 수행할 동작";
+"control.enterFullScreen.toolTip" = "비디오를 전체 화면으로 보기 (F)";
+"control.exitFullScreen.toolTip" = "전체 화면 종료 (F)";
 "endBehavior.stop.label" = "정지";
 "endBehavior.loop.label" = "반복";
 "endBehavior.returnToStart.label" = "처음으로";

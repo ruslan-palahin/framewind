@@ -3,6 +3,8 @@
 "menu.file" = "Arkiv";
 "menu.open" = "Öppna…";
 "menu.close" = "Stäng";
+"menu.view" = "Innehåll";
+"menu.enterFullScreen" = "Gå till helskärm";
 "control.play" = "Spela";
 "control.pause" = "Paus";
 "control.play.toolTip" = "Spela upp videon. Om videon redan har tagit slut börjar den om från början";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Videons längd";
 "control.endBehavior.label" = "När videon slutar:";
 "control.endBehavior.toolTip" = "Vad som ska hända när videon tar slut";
+"control.enterFullScreen.toolTip" = "Visa videon i helskärm (F)";
+"control.exitFullScreen.toolTip" = "Avsluta helskärm (F)";
 "endBehavior.stop.label" = "Stopp";
 "endBehavior.loop.label" = "Upprepa";
 "endBehavior.returnToStart.label" = "Till början";

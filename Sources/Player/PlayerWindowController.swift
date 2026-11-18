@@ -3,9 +3,11 @@ import AVFoundation
 import PlayerCore
 
 @MainActor
-final class PlayerWindowController: NSWindowController {
+final class PlayerWindowController: NSWindowController, NSWindowDelegate {
     private static let loaderDuration: Duration = .milliseconds(500)
     private static let maxScreenShare: CGFloat = 0.8
+    private static let fullScreenKeyCode: UInt16 = 3
+    private static let spaceKeyCode: UInt16 = 49
 
     private let player: AVPlayer
     private let controlBar: ControlBar
@@ -16,6 +18,7 @@ final class PlayerWindowController: NSWindowController {
     private var endObserver: NSObjectProtocol?
     private var timeObserver: Any?
     private var playbackObservation: NSKeyValueObservation?
+    private var keyMonitor: Any?
 
     init() {
         let player = AVPlayer()
@@ -32,15 +35,17 @@ final class PlayerWindowController: NSWindowController {
         )
         window.title = Bundle.main.displayName
         window.isReleasedWhenClosed = false
-        window.contentMinSize = NSSize(width: 680, height: 240)
+        window.contentMinSize = NSSize(width: 720, height: 240)
         window.collectionBehavior = [.fullScreenPrimary]
         window.contentView = contentView
         window.center()
         super.init(window: window)
+        window.delegate = self
 
         connectControls()
         controlBar.showEndBehavior(rules.endBehavior)
         observePlayer()
+        observeKeys()
         contentView.showMessage(String(localized: "message.openHint"))
     }
 
@@ -135,6 +140,47 @@ final class PlayerWindowController: NSWindowController {
         player.play()
     }
 
+    @objc private func videoClicked() {
+        togglePlayPause()
+        contentView.revealControls()
+    }
+
+    @objc private func toggleFullScreen() {
+        window?.toggleFullScreen(nil)
+    }
+
+    func windowWillEnterFullScreen(_ notification: Notification) {
+        contentView.setFullScreen(true)
+        controlBar.showFullScreen(true)
+    }
+
+    func windowWillExitFullScreen(_ notification: Notification) {
+        contentView.setFullScreen(false)
+        controlBar.showFullScreen(false)
+    }
+
+    private func observeKeys() {
+        keyMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { [weak self] event in
+            let isHandled = MainActor.assumeIsolated { self?.handleKey(event) ?? false }
+            return isHandled ? nil : event
+        }
+    }
+
+    private func handleKey(_ event: NSEvent) -> Bool {
+        guard event.window === window,
+              event.modifierFlags.isDisjoint(with: [.command, .control, .option])
+        else { return false }
+        switch event.keyCode {
+        case Self.fullScreenKeyCode:
+            if !event.isARepeat { toggleFullScreen() }
+        case Self.spaceKeyCode:
+            if !event.isARepeat { togglePlayPause() }
+        default:
+            return false
+        }
+        return true
+    }
+
     @objc private func scrub(_ sender: NSSlider) {
         rules.didSeek()
         let target = CMTime(seconds: sender.doubleValue, preferredTimescale: 600)
@@ -206,5 +252,9 @@ final class PlayerWindowController: NSWindowController {
         controlBar.slider.action = #selector(scrub(_:))
         controlBar.endBehaviorControl.target = self
         controlBar.endBehaviorControl.action = #selector(changeEndBehavior(_:))
+        controlBar.fullScreenButton.target = self
+        controlBar.fullScreenButton.action = #selector(toggleFullScreen)
+        contentView.videoClick.target = self
+        contentView.videoClick.action = #selector(videoClicked)
     }
 }

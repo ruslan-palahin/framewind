@@ -3,6 +3,8 @@
 "menu.file" = "Fail";
 "menu.open" = "Ava…";
 "menu.close" = "Sulge";
+"menu.view" = "Vaade";
+"menu.enterFullScreen" = "Lülitu täisekraanile";
 "control.play" = "Esita";
 "control.pause" = "Paus";
 "control.play.toolTip" = "Esita video. Kui video on juba lõppenud, algab see otsast peale";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Video kestus";
 "control.endBehavior.label" = "Video lõpus:";
 "control.endBehavior.toolTip" = "Mida teha, kui video lõpeb";
+"control.enterFullScreen.toolTip" = "Näita videot täisekraanil (F)";
+"control.exitFullScreen.toolTip" = "Välju täisekraanist (F)";
 "endBehavior.stop.label" = "Stopp";
 "endBehavior.loop.label" = "Korda";
 "endBehavior.returnToStart.label" = "Algusesse";

@@ -3,6 +3,8 @@
 "menu.file" = "Arkiv";
 "menu.open" = "Åbn…";
 "menu.close" = "Luk";
+"menu.view" = "Oversigt";
+"menu.enterFullScreen" = "Vis på fuld skærm";
 "control.play" = "Afspil";
 "control.pause" = "Pause";
 "control.play.toolTip" = "Afspil videoen. Hvis videoen allerede er slut, starter den forfra";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Videoens længde";
 "control.endBehavior.label" = "Når videoen slutter:";
 "control.endBehavior.toolTip" = "Hvad der skal ske, når videoen slutter";
+"control.enterFullScreen.toolTip" = "Vis videoen på fuld skærm (F)";
+"control.exitFullScreen.toolTip" = "Afslut fuld skærm (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Gentag";
 "endBehavior.returnToStart.label" = "Til start";

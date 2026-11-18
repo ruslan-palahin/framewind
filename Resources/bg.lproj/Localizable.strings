@@ -3,6 +3,8 @@
 "menu.file" = "Файл";
 "menu.open" = "Отвори…";
 "menu.close" = "Затвори";
+"menu.view" = "Изглед";
+"menu.enterFullScreen" = "Влез в режим на цял екран";
 "control.play" = "Пусни";
 "control.pause" = "Пауза";
 "control.play.toolTip" = "Пусни видеото. Ако видеото вече е свършило, то ще започне отначало";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Продължителност на видеото";
 "control.endBehavior.label" = "В края на видеото:";
 "control.endBehavior.toolTip" = "Какво да се случи, когато видеото свърши";
+"control.enterFullScreen.toolTip" = "Покажи видеото на цял екран (F)";
+"control.exitFullScreen.toolTip" = "Изход от цял екран (F)";
 "endBehavior.stop.label" = "Стоп";
 "endBehavior.loop.label" = "Повтори";
 "endBehavior.returnToStart.label" = "В началото";

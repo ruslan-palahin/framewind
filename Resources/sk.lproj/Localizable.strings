@@ -3,6 +3,8 @@
 "menu.file" = "Súbor";
 "menu.open" = "Otvoriť…";
 "menu.close" = "Zavrieť";
+"menu.view" = "Zobraziť";
+"menu.enterFullScreen" = "Prejsť na celú obrazovku";
 "control.play" = "Prehrať";
 "control.pause" = "Pozastaviť";
 "control.play.toolTip" = "Prehrať video. Ak sa video už skončilo, začne od začiatku";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Dĺžka videa";
 "control.endBehavior.label" = "Na konci videa:";
 "control.endBehavior.toolTip" = "Čo urobiť, keď sa video skončí";
+"control.enterFullScreen.toolTip" = "Zobraziť video na celú obrazovku (F)";
+"control.exitFullScreen.toolTip" = "Ukončiť režim celej obrazovky (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Opakovať";
 "endBehavior.returnToStart.label" = "Na začiatok";

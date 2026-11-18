@@ -3,6 +3,8 @@
 "menu.file" = "Archief";
 "menu.open" = "Open…";
 "menu.close" = "Sluit";
+"menu.view" = "Weergave";
+"menu.enterFullScreen" = "Activeer schermvullende weergave";
 "control.play" = "Speel af";
 "control.pause" = "Pauze";
 "control.play.toolTip" = "Speel de video af. Als de video al is afgelopen, begint hij opnieuw";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Duur van de video";
 "control.endBehavior.label" = "Aan het eind:";
 "control.endBehavior.toolTip" = "Wat er gebeurt als de video is afgelopen";
+"control.enterFullScreen.toolTip" = "Toon de video schermvullend (F)";
+"control.exitFullScreen.toolTip" = "Stop schermvullende weergave (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Herhaal";
 "endBehavior.returnToStart.label" = "Naar begin";

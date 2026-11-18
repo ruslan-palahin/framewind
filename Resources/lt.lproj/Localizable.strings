@@ -3,6 +3,8 @@
 "menu.file" = "Failas";
 "menu.open" = "Atidaryti…";
 "menu.close" = "Uždaryti";
+"menu.view" = "Rodinys";
+"menu.enterFullScreen" = "Įjungti viso ekrano režimą";
 "control.play" = "Leisti";
 "control.pause" = "Pristabdyti";
 "control.play.toolTip" = "Leisti vaizdo įrašą. Jei vaizdo įrašas jau baigėsi, jis prasidės iš naujo";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Vaizdo įrašo trukmė";
 "control.endBehavior.label" = "Pasibaigus įrašui:";
 "control.endBehavior.toolTip" = "Ką daryti, kai vaizdo įrašas baigiasi";
+"control.enterFullScreen.toolTip" = "Rodyti vaizdo įrašą visame ekrane (F)";
+"control.exitFullScreen.toolTip" = "Išeiti iš viso ekrano režimo (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Kartoti";
 "endBehavior.returnToStart.label" = "Į pradžią";

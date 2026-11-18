@@ -8,6 +8,10 @@ A small native macOS video player for simple, precise playback. Built with Swift
 ![macOS 14+](https://img.shields.io/badge/macOS-14%2B-000000?logo=apple&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue)
 
+## Motivation
+
+Framewing was made to be a simple video player, one that is easy and a pleasure to use. It does a few things and tries to do each of them well: open a video, play it, scrub through it and choose what happens at the end.
+
 ## Features
 
 - Opens MP4, MOV and M4V files from Finder (double-click or **Open With**) or with **⌘O**.
@@ -43,43 +47,6 @@ open build/Framewing-dev.app
 | Close, hide, quit | ⌘W, ⌘H, ⌘Q |
 
 When Finder passes several files at once, the first one opens. Closing the window quits the app.
-
-## Architecture
-
-Two targets and one rule: rules and calculations on plain values live in the core; AppKit, AVFoundation and side effects live in the app.
-
-```mermaid
-flowchart TD
-    subgraph App["Player · executable · AppKit, AVFoundation, AVKit"]
-        main["main.swift + MainMenu"] --> delegate[AppDelegate]
-        delegate --> controller["PlayerWindowController<br/>owns AVPlayer"]
-        controller --> content[PlayerContentView]
-        content --> bar["ControlBar + ScrubSlider"]
-    end
-    subgraph Core["PlayerCore · library · Foundation, CoreGraphics"]
-        rules[PlaybackRules]
-        geometry[VideoGeometry]
-        fitting[WindowFitting]
-        time[PlaybackTime]
-        behavior[EndBehavior]
-    end
-    controller --> rules
-    controller --> geometry
-    controller --> fitting
-    controller --> bar
-    bar --> time
-    bar --> behavior
-```
-
-- **PlayerCore** makes the decisions: what happens when a video ends, whether Play starts over, how the window fits a video, how time is shown. It holds plain value types with `package` access: no AppKit or AV frameworks, no I/O, no localized strings. SwiftPM cannot restrict system imports, so `CoreImportsTests` enforces the rule.
-- The **Player** target is the AppKit shell. `PlayerWindowController` is the only owner of `AVPlayer`, the load task and the observers. It asks the core what to do and does it. Views take data and expose controls, and the controller wires up their actions.
-- **Localization** lives in `Resources/<lang>.lproj`. `build.sh` copies it into the main app bundle rather than shipping a SwiftPM resource bundle, because AppKit picks the language of its own UI and the layout direction from the main bundle's localizations.
-
-Where new code goes:
-
-- A rule or calculation on plain values goes to `Sources/PlayerCore/<Concept>.swift`, with tests in `Tests/PlayerCoreTests/<Concept>Tests.swift`.
-- Anything that touches AppKit, AVFoundation, files, preferences or timers, and every localized string, goes to `Sources/Player/`. Display text for a core type goes to `<CoreType>+Text.swift`.
-- A new target is added only when code gets a second consumer.
 
 ## Localization
 

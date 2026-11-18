@@ -3,6 +3,8 @@
 "menu.file" = "Αρχείο";
 "menu.open" = "Άνοιγμα…";
 "menu.close" = "Κλείσιμο";
+"menu.view" = "Προβολή";
+"menu.enterFullScreen" = "Μετάβαση σε πλήρη οθόνη";
 "control.play" = "Αναπαραγωγή";
 "control.pause" = "Παύση";
 "control.play.toolTip" = "Αναπαραγωγή του βίντεο. Αν το βίντεο έχει ήδη τελειώσει, θα ξεκινήσει από την αρχή";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Διάρκεια βίντεο";
 "control.endBehavior.label" = "Στο τέλος:";
 "control.endBehavior.toolTip" = "Τι θα γίνει όταν τελειώσει το βίντεο";
+"control.enterFullScreen.toolTip" = "Προβολή του βίντεο σε πλήρη οθόνη (F)";
+"control.exitFullScreen.toolTip" = "Έξοδος από την πλήρη οθόνη (F)";
 "endBehavior.stop.label" = "Διακοπή";
 "endBehavior.loop.label" = "Επανάληψη";
 "endBehavior.returnToStart.label" = "Στην αρχή";

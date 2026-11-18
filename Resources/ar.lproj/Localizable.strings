@@ -3,6 +3,8 @@
 "menu.file" = "ملف";
 "menu.open" = "فتح…";
 "menu.close" = "إغلاق";
+"menu.view" = "عرض";
+"menu.enterFullScreen" = "الدخول إلى وضع ملء الشاشة";
 "control.play" = "تشغيل";
 "control.pause" = "إيقاف مؤقت";
 "control.play.toolTip" = "تشغيل الفيديو. إذا كان الفيديو قد انتهى بالفعل، فسيبدأ من البداية";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "مدة الفيديو";
 "control.endBehavior.label" = "عند نهاية الفيديو:";
 "control.endBehavior.toolTip" = "ما يجب فعله عند انتهاء الفيديو";
+"control.enterFullScreen.toolTip" = "عرض الفيديو بملء الشاشة (F)";
+"control.exitFullScreen.toolTip" = "الخروج من ملء الشاشة (F)";
 "endBehavior.stop.label" = "إيقاف";
 "endBehavior.loop.label" = "تكرار";
 "endBehavior.returnToStart.label" = "إلى البداية";

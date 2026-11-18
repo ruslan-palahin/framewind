@@ -3,6 +3,8 @@
 "menu.file" = "Fájl";
 "menu.open" = "Megnyitás…";
 "menu.close" = "Bezárás";
+"menu.view" = "Nézet";
+"menu.enterFullScreen" = "Váltás teljes képernyőre";
 "control.play" = "Lejátszás";
 "control.pause" = "Szünet";
 "control.play.toolTip" = "A videó lejátszása. Ha a videó már véget ért, az elejéről indul";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "A videó hossza";
 "control.endBehavior.label" = "A videó végén:";
 "control.endBehavior.toolTip" = "Mi történjen, amikor a videó véget ér";
+"control.enterFullScreen.toolTip" = "Videó megjelenítése teljes képernyőn (F)";
+"control.exitFullScreen.toolTip" = "Kilépés a teljes képernyőből (F)";
 "endBehavior.stop.label" = "Leállítás";
 "endBehavior.loop.label" = "Ismétlés";
 "endBehavior.returnToStart.label" = "Elejére";

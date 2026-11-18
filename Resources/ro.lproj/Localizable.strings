@@ -3,6 +3,8 @@
 "menu.file" = "Fișier";
 "menu.open" = "Deschide…";
 "menu.close" = "Închide";
+"menu.view" = "Afișare";
+"menu.enterFullScreen" = "Intră în modul ecran complet";
 "control.play" = "Redă";
 "control.pause" = "Pauză";
 "control.play.toolTip" = "Redă videoclipul. Dacă videoclipul s-a terminat deja, va începe de la început";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Durata videoclipului";
 "control.endBehavior.label" = "La final:";
 "control.endBehavior.toolTip" = "Ce se întâmplă când se termină videoclipul";
+"control.enterFullScreen.toolTip" = "Afișează videoclipul pe tot ecranul (F)";
+"control.exitFullScreen.toolTip" = "Ieși din modul ecran complet (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Repetă";
 "endBehavior.returnToStart.label" = "La început";

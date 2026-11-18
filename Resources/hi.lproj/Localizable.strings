@@ -3,6 +3,8 @@
 "menu.file" = "फ़ाइल";
 "menu.open" = "खोलें…";
 "menu.close" = "बंद करें";
+"menu.view" = "दृश्य";
+"menu.enterFullScreen" = "पूर्ण स्क्रीन में जाएँ";
 "control.play" = "चलाएँ";
 "control.pause" = "पॉज़";
 "control.play.toolTip" = "वीडियो चलाएँ। अगर वीडियो पहले ही ख़त्म हो चुका है, तो यह शुरू से चलेगा";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "वीडियो की अवधि";
 "control.endBehavior.label" = "वीडियो ख़त्म होने पर:";
 "control.endBehavior.toolTip" = "वीडियो ख़त्म होने पर क्या करना है";
+"control.enterFullScreen.toolTip" = "वीडियो पूर्ण स्क्रीन में दिखाएँ (F)";
+"control.exitFullScreen.toolTip" = "पूर्ण स्क्रीन से बाहर निकलें (F)";
 "endBehavior.stop.label" = "स्टॉप";
 "endBehavior.loop.label" = "दोहराएँ";
 "endBehavior.returnToStart.label" = "शुरुआत पर";

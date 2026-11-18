@@ -3,6 +3,8 @@
 "menu.file" = "Tệp";
 "menu.open" = "Mở…";
 "menu.close" = "Đóng";
+"menu.view" = "Xem";
+"menu.enterFullScreen" = "Vào chế độ toàn màn hình";
 "control.play" = "Phát";
 "control.pause" = "Tạm dừng";
 "control.play.toolTip" = "Phát video. Nếu video đã kết thúc, video sẽ phát lại từ đầu";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Thời lượng video";
 "control.endBehavior.label" = "Khi video kết thúc:";
 "control.endBehavior.toolTip" = "Việc cần làm khi video kết thúc";
+"control.enterFullScreen.toolTip" = "Xem video toàn màn hình (F)";
+"control.exitFullScreen.toolTip" = "Thoát chế độ toàn màn hình (F)";
 "endBehavior.stop.label" = "Dừng";
 "endBehavior.loop.label" = "Lặp lại";
 "endBehavior.returnToStart.label" = "Về đầu";

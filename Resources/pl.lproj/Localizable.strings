@@ -3,6 +3,8 @@
 "menu.file" = "Plik";
 "menu.open" = "Otwórz…";
 "menu.close" = "Zamknij";
+"menu.view" = "Widok";
+"menu.enterFullScreen" = "Przejdź na pełny ekran";
 "control.play" = "Odtwórz";
 "control.pause" = "Pauza";
 "control.play.toolTip" = "Odtwórz wideo. Jeśli wideo już się skończyło, zacznie się od początku";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Długość wideo";
 "control.endBehavior.label" = "Na końcu wideo:";
 "control.endBehavior.toolTip" = "Co zrobić, gdy wideo się skończy";
+"control.enterFullScreen.toolTip" = "Pokaż wideo na pełnym ekranie (F)";
+"control.exitFullScreen.toolTip" = "Zamknij pełny ekran (F)";
 "endBehavior.stop.label" = "Stop";
 "endBehavior.loop.label" = "Powtórz";
 "endBehavior.returnToStart.label" = "Na początek";

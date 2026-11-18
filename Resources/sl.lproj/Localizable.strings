@@ -3,6 +3,8 @@
 "menu.file" = "Datoteka";
 "menu.open" = "Odpri…";
 "menu.close" = "Zapri";
+"menu.view" = "Pogled";
+"menu.enterFullScreen" = "Vklopi celozaslonski način";
 "control.play" = "Predvajaj";
 "control.pause" = "Premor";
 "control.play.toolTip" = "Predvajaj video. Če se je video že končal, se bo začel znova od začetka";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Trajanje videa";
 "control.endBehavior.label" = "Ob koncu videa:";
 "control.endBehavior.toolTip" = "Kaj naj se zgodi, ko se video konča";
+"control.enterFullScreen.toolTip" = "Prikaži video v celozaslonskem načinu (F)";
+"control.exitFullScreen.toolTip" = "Izhod iz celozaslonskega načina (F)";
 "endBehavior.stop.label" = "Ustavi";
 "endBehavior.loop.label" = "Ponavljaj";
 "endBehavior.returnToStart.label" = "Na začetek";

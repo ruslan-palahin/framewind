@@ -3,6 +3,8 @@
 "menu.file" = "Fails";
 "menu.open" = "Atvērt…";
 "menu.close" = "Aizvērt";
+"menu.view" = "Skats";
+"menu.enterFullScreen" = "Ieslēgt pilnekrāna režīmu";
 "control.play" = "Atskaņot";
 "control.pause" = "Pauze";
 "control.play.toolTip" = "Atskaņot video. Ja video jau ir beidzies, tas sāksies no sākuma";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Video ilgums";
 "control.endBehavior.label" = "Video beigās:";
 "control.endBehavior.toolTip" = "Ko darīt, kad video beidzas";
+"control.enterFullScreen.toolTip" = "Rādīt video pilnekrāna režīmā (F)";
+"control.exitFullScreen.toolTip" = "Iziet no pilnekrāna režīma (F)";
 "endBehavior.stop.label" = "Apturēt";
 "endBehavior.loop.label" = "Atkārtot";
 "endBehavior.returnToStart.label" = "Uz sākumu";

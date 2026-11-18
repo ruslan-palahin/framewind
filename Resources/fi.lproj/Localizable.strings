@@ -3,6 +3,8 @@
 "menu.file" = "Arkisto";
 "menu.open" = "Avaa…";
 "menu.close" = "Sulje";
+"menu.view" = "Näytä";
+"menu.enterFullScreen" = "Siirry koko näytön tilaan";
 "control.play" = "Toista";
 "control.pause" = "Tauko";
 "control.play.toolTip" = "Toista video. Jos video on jo päättynyt, se alkaa alusta";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Videon kesto";
 "control.endBehavior.label" = "Videon lopussa:";
 "control.endBehavior.toolTip" = "Mitä tehdään, kun video päättyy";
+"control.enterFullScreen.toolTip" = "Näytä video koko näytöllä (F)";
+"control.exitFullScreen.toolTip" = "Poistu koko näytön tilasta (F)";
 "endBehavior.stop.label" = "Pysäytä";
 "endBehavior.loop.label" = "Silmukka";
 "endBehavior.returnToStart.label" = "Alkuun";

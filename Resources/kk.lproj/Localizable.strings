@@ -3,6 +3,8 @@
 "menu.file" = "Файл";
 "menu.open" = "Ашу…";
 "menu.close" = "Жабу";
+"menu.view" = "Көрініс";
+"menu.enterFullScreen" = "Толық экран режиміне өту";
 "control.play" = "Ойнату";
 "control.pause" = "Кідірту";
 "control.play.toolTip" = "Бейнені ойнату. Бейне аяқталып қойса, басынан бастап ойнатылады";
@@ -12,6 +14,8 @@
 "control.duration.toolTip" = "Бейне ұзақтығы";
 "control.endBehavior.label" = "Бейне соңында:";
 "control.endBehavior.toolTip" = "Бейне аяқталғанда не істеу керек";
+"control.enterFullScreen.toolTip" = "Бейнені толық экранда көрсету (F)";
+"control.exitFullScreen.toolTip" = "Толық экраннан шығу (F)";
 "endBehavior.stop.label" = "Тоқтату";
 "endBehavior.loop.label" = "Қайталау";
 "endBehavior.returnToStart.label" = "Басына";
